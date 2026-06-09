@@ -10,7 +10,7 @@ interface LogoProps {
 }
 
 const Logo = ({
-  name = "Lemon.ai",
+  name = "Smart Socialer",
   className,
   hideName = false,
 }: LogoProps) => {
