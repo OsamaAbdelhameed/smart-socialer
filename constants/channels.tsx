@@ -1,4 +1,5 @@
 import { InstagramIcon, NewTwitterIcon, FacebookIcon, TiktokIcon, ThreadsIcon, YoutubeIcon, LinkedinIcon, BlueskyIcon } from '@hugeicons/core-free-icons'
+import { IconSvgElement } from '@hugeicons/react'
 
 export enum ChannelTypeEnum {
   TWITTER = "TWITTER",
@@ -11,7 +12,7 @@ export enum ChannelTypeEnum {
   TIKTOK = "TIKTOK"
 }
 
-export const CHANNEL_TYPE_ICONS: Record<ChannelTypeEnum, any> = {
+export const CHANNEL_TYPE_ICONS: Record<ChannelTypeEnum, IconSvgElement> = {
   [ChannelTypeEnum.TWITTER]: NewTwitterIcon,
   [ChannelTypeEnum.LINKEDIN]: LinkedinIcon,
   [ChannelTypeEnum.INSTAGRAM]: InstagramIcon,
