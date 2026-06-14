@@ -154,7 +154,7 @@ function createProvider(type:ChannelTypeEnum,opts: { pkce?: boolean} = {}): OAut
 }
 
 
-const PROVIDERS: Record<ChannelTypeEnum, any> = {
+const PROVIDERS: Record<ChannelTypeEnum, OAuthProvider> = {
     [ChannelTypeEnum.TWITTER]: createProvider(ChannelTypeEnum.TWITTER,{ pkce: true }),
     [ChannelTypeEnum.LINKEDIN]: createProvider(ChannelTypeEnum.LINKEDIN),
     [ChannelTypeEnum.INSTAGRAM]: createProvider(ChannelTypeEnum.INSTAGRAM),
